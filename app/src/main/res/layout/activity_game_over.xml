@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameOver">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@color/black"
+        android:text="@string/gameOver"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/black"
+        android:gravity="bottom"
+        app:fontFamily="@font/biting_nails"
+        android:text="@string/s1"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/OverHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="100dp"
+        android:background="@color/black"
+        android:onClick="OverHome"
+        android:text="@string/home"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

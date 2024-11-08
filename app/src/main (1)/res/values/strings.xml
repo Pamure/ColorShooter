@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CrashPlanes</string>
+    <string name="company_domain">"MINDS"</string>
+    <string name="game_name">"Crash Planes"</string>
+    <string name="play_button">"          Image-Mode          "</string>
+    <string name="small_screen_error">"Screen size not supported"</string>
+    <string name="home_test_ad">"ca-app-pub-3940256099942544/6300978111"</string>
+    <string name="gameOver">" Game Over Touched Wrong Color "</string>
+    <string name="home">"Go Back To Home"</string>
+    <string name="of">"        Being Clicked        "</string>
+    <string name="pt2">"        Invert Mode        "</string>
+</resources>

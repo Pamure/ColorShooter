@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.crowshooter.planes"
+    tools:showIn="@layout/activity_planes">
+
+    <View
+        android:id="@+id/hello"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <com.example.crowshooter.GameView
+        android:id="@+id/left_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/control_buttons"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/hello"
+        android:layout_toLeftOf="@id/hello"
+        android:background="@color/black" />
+
+    <com.example.crowshooter.GameView
+        android:id="@+id/right_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/control_buttons"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/hello"
+        android:layout_toRightOf="@id/hello"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/control_buttons2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/hello"
+        android:layout_toLeftOf="@id/hello"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/shootButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:contentDescription="@string/game_name"
+            android:longClickable="true"
+            android:src="@drawable/white_shoot"
+            android:layout_gravity=""
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/control_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/hello"
+        android:layout_toRightOf="@id/hello"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="@string/game_name"
+            android:longClickable="true"
+            android:src="@drawable/black_shoot" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
